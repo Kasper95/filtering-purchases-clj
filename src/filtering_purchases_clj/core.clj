@@ -3,5 +3,7 @@
   (:gen-class))
 
 (defn -main []
-  (let [purchases(slurp "purchases.csv")]
+  (let [purchases (slurp "purchases.csv")
+        purchases (str/split-lines purchases)
+        ]
               purchases))
