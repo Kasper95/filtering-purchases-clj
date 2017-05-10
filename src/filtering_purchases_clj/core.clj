@@ -1,6 +1,7 @@
 (ns filtering-purchases-clj.core
+  (:require [clojure.string :as str])
   (:gen-class))
 
 (defn -main []
-  (slurp "purchases.csv")
-  )
+  (let [purchases(slurp "purchases.csv")]
+              purchases))
